@@ -1,243 +1,354 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
 
-    <!-- корректное отображение на разных экранах -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="theme-color" content="#081629">
+    <meta
+        name="theme-color"
+        content="#081629"
+    >
 
     <title>Blue Night</title>
 
-    <!-- подключение файла оформления -->
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-    <!-- основное содержимое стартовой страницы -->
     <main class="start-page" id="top">
 
-        <!-- верхняя часть: приветствие и часы -->
+        <!-- ВЕРХНЯЯ ЧАСТЬ -->
+
         <header class="hero">
 
-            <div class="greeting">
-                <p class="eyebrow">BLUE NIGHT</p>
-
-                <h1>Добро пожаловать</h1>
-
-                <p class="subtitle">
-                    Твоё маленькое пространство в интернете
-                </p>
-            </div>
-
             <div class="clock">
-                <time id="clock-time">00:00</time>
-                <p id="clock-date">Загрузка даты...</p>
+
+                <time id="clock-time">
+                    00:00
+                </time>
+
+                <p id="clock-date">
+                    Загрузка даты...
+                </p>
+
+                <p class="blue-night-title">
+                    BLUE NIGHT
+                </p>
+
             </div>
 
         </header>
 
 
-        <!-- поиск в интернете -->
-        <section class="search-section">
-    <form
-        class="search-form"
-        action="https://www.google.com/search"
-        method="get"
-    >
-        <label for="search-input" class="visually-hidden">
-            Поиск в интернете
-        </label>
-        <input
-            type="search"
-            id="search-input"
-            name="q"
-            placeholder="Найти что-нибудь интересное..."
-            autocomplete="off"
-        >
-        <button type="submit" aria-label="Искать">
-            →
-        </button>
-    </form>
-</section>
+        <!-- ОСНОВНАЯ КОМПОЗИЦИЯ -->
+
+        <div class="main-layout">
 
 
-<!-- иконки любимых сайтов -->
-<section class="sites-section">
-    <h2 class="section-title">Быстрый доступ</h2>
+            <!-- ЛЕВАЯ КОЛОНКА — БЫСТРЫЙ ДОСТУП -->
 
-    <div class="sites-grid">
-        <a class="site-link"
-           href="https://www.youtube.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="YouTube"
-           title="YouTube">
-            <img class="site-icon" src="icon/youtube.png" alt="">
-        </a>
+            <aside class="sites-section">
 
-        <a class="site-link"
-           href="https://ru.pinterest.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Pinterest"
-           title="Pinterest">
-            <img class="site-icon" src="icon/pinterest.png" alt="">
-        </a>
+                <div class="sites-grid">
 
-        <a class="site-link"
-           href="https://github.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="GitHub"
-           title="GitHub">
-            <img class="site-icon" src="icon/github.png" alt="">
-        </a>
+                    <!-- YouTube -->
+                    <a
+                        class="site-link"
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="YouTube"
+                        title="YouTube"
+                    >
+                        <img
+                            class="site-icon"
+                            src="icon/youtube.png"
+                            alt=""
+                        >
+                    </a>
 
-        <a class="site-link"
-           href="https://chatgpt.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="ChatGPT"
-           title="ChatGPT">
-            <img class="site-icon" src="icon/chatgpt.png" alt="">
-        </a>
 
-                <a class="site-link"
-           href="https://www.rksi.ru/schedule"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="rksi"
-           title="rksi">
-            <img class="site-icon" src="icon/rksi.png" alt="">
-        </a>
+                    <!-- Pinterest -->
+                    <a
+                        class="site-link"
+                        href="https://ru.pinterest.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Pinterest"
+                        title="Pinterest"
+                    >
+                        <img
+                            class="site-icon"
+                            src="icon/pinterest.png"
+                            alt=""
+                        >
+                    </a>
 
-    </div>
-</section>
 
-                <!-- добавление новых сайтов через JavaScript -->
+                    <!-- GitHub -->
+                    <a
+                        class="site-link"
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        title="GitHub"
+                    >
+                        <img
+                            class="site-icon"
+                            src="icon/github.png"
+                            alt=""
+                        >
+                    </a>
+
+
+                    <!-- ChatGPT -->
+                    <a
+                        class="site-link"
+                        href="https://chatgpt.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="ChatGPT"
+                        title="ChatGPT"
+                    >
+                        <img
+                            class="site-icon"
+                            src="icon/chatgpt.png"
+                            alt=""
+                        >
+                    </a>
+
+
+                    <!-- РКСИ -->
+                    <a
+                        class="site-link"
+                        href="https://www.rksi.ru/schedule"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="РКСИ"
+                        title="РКСИ"
+                    >
+                        <img
+                            class="site-icon"
+                            src="icon/rksi.png"
+                            alt=""
+                        >
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА -->
+
+            <div class="center-content">
+
+
+                <!-- ПОИСК -->
+
+                <section class="search-section">
+
+                    <form
+                        class="search-form"
+                        action="https://www.google.com/search"
+                        method="get"
+                    >
+
+                        <label
+                            for="search-input"
+                            class="visually-hidden"
+                        >
+                            Поиск в интернете
+                        </label>
+
+                        <input
+                            type="search"
+                            id="search-input"
+                            name="q"
+                            placeholder="Найти что-нибудь интересное..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="submit"
+                            aria-label="Искать"
+                        >
+                            →
+                        </button>
+
+                    </form>
+
+                </section>
+
+
+
+                <!-- ЗАМЕТКИ + РАСПИСАНИЕ -->
+
+                <section class="widgets-section">
+
+
+                    <!-- ЗАМЕТКИ -->
+
+                    <article
+                        class="widget"
+                        id="notes"
+                    >
+
+                        <div class="widget-heading">
+
+                            <h2>
+                                Заметки
+                            </h2>
+
+                            <span>
+                                ✎
+                            </span>
+
+                        </div>
+
+
+                        <p class="widget-description">
+                            Место для твоих мыслей и идей
+                        </p>
+
+
+                        <textarea
+                            id="notes-text"
+                            class="notes-text"
+                            placeholder="Запиши сюда мысль или идею..."
+                            aria-label="Текст заметки"
+                        ></textarea>
+
+
+                        <div class="notes-footer">
+
+                            <span
+                                id="notes-status"
+                                aria-live="polite"
+                            ></span>
+
+                            <button
+                                id="notes-clear"
+                                type="button"
+                            >
+                                Очистить
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- РАСПИСАНИЕ -->
+
+                    <article
+                        class="widget"
+                        id="schedule"
+                    >
+
+                        <div class="widget-heading">
+
+                            <h2>
+                                Расписание
+                            </h2>
+
+                            <span>
+                                ▦
+                            </span>
+
+                        </div>
+
+
+                        <p
+                            class="widget-description"
+                            id="schedule-description"
+                        >
+                            Загрузка расписания...
+                        </p>
+
+
+                        <div
+                            id="schedule-list"
+                            class="schedule-list"
+                        >
+                            <!-- JavaScript загрузит пары -->
+                        </div>
+
+
+                        <div class="schedule-footer">
+
+                            <span id="schedule-status"></span>
+
+                        </div>
+
+                    </article>
+
+                </section>
 
             </div>
 
-        </section>
 
 
-        <!-- музыкальный плейлист -->
-        <section class="music-section" id="music">
+            <!-- ПРАВАЯ КОЛОНКА — МУЗЫКА -->
 
-            <div class="music-info">
-
-                <span class="music-icon">♫</span>
-
-                <div>
-                    <h2>Моя музыка</h2>
-
-                    <p>
-                        Плейлист для учёбы, отдыха и ночных мыслей
-                    </p>
-                </div>
-
-            </div>
-
-        <a
-            class="music-link"
-            href="https://www.youtube.com/watch?v=9y_xRVfJf1A"
-            target="_blank"
-            rel="noopener noreferrer"
+            <aside
+                class="music-section"
+                id="music"
             >
-            Открыть музыку ↗
-        </a>
 
-        </section>
+                <div class="music-info">
 
+                    <span class="music-icon">
+                        ♫
+                    </span>
 
-        <!-- доп виджеты -->
-        <section class="widgets-section">
+                    <div>
 
-            <!-- заметки -->
-            <article class="widget" id="notes">
+                        <h2>
+                            Моя музыка
+                        </h2>
 
-                <div class="widget-heading">
-                    <h2>Заметки</h2>
-                    <span>✎</span>
+                        <p>
+                            Плейлист для учёбы, отдыха и ночных мыслей
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <p class="widget-description">
-                    Место для твоих мыслей и идей
-                </p>
 
-                 <textarea
-                    id="notes-text"
-                    class="notes-text"
-                    placeholder="Запиши сюда мысль или идею..."
-                    aria-label="Текст заметки"
-                ></textarea>
+                <a
+                    class="music-link"
+                    href="https://www.youtube.com/watch?v=9y_xRVfJf1A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Открыть музыку ↗
+                </a>
 
-<div class="notes-footer">
-    <span id="notes-status" aria-live="polite"></span>
-    <button id="notes-clear" type="button">Очистить</button>
-</div>
+            </aside>
 
-            </article>
-
-            <!-- расписание -->
-            <article class="widget" id="schedule">
-                <div class="widget-heading">
-                    <h2>Расписание</h2>
-                    <span>▦</span>
-                </div>
-
-                <p class="widget-description" id="schedule-description">
-                    Загрузка расписания...
-                </p>
-
-                <div id="schedule-list" class="schedule-list">
-                <!-- JavaScript загрузит пары -->
-                </div>
-
-                <div class="schedule-footer">
-                <span id="schedule-status"></span>
-                </div>
-            </article>
-        </section>
-
-
-        <!-- нижняя панель -->
-        <nav class="bottom-dock" aria-label="Быстрая навигация">
-
-            <a class="dock-button" href="#top" aria-label="Главная">
-                <span>⌂</span>
-            </a>
-
-            <a class="dock-button" href="#music" aria-label="Музыка">
-                <span>♫</span>
-            </a>
-
-            <a class="dock-button" href="#notes" aria-label="Заметки">
-                <span>✎</span>
-            </a>
-
-            <a class="dock-button" href="#schedule" aria-label="Расписание">
-                <span>▦</span>
-            </a>
-
-            <button
-                class="dock-button"
-                id="settings-button"
-                type="button"
-                aria-label="Настройки"
-            >
-                <span>⚙</span>
-            </button>
-
-        </nav>
+        </div>
 
     </main>
 
-    <!-- подключаем JavaScript -->
+
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
