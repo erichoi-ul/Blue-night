@@ -26,149 +26,20 @@
 
     <main class="start-page" id="top">
 
-        <!-- ВЕРХНЯЯ ЧАСТЬ -->
-
-        <header class="hero">
-
-            <div class="clock">
-
-                <time id="clock-time">
-                    00:00
-                </time>
-
-                <p id="clock-date">
-                    Загрузка даты...
-                </p>
-
-                <p class="blue-night-title">
-                    BLUE NIGHT
-                </p>
-
-            </div>
-
-        </header>
-
-
         <!-- ОСНОВНАЯ КОМПОЗИЦИЯ -->
-
         <div class="main-layout">
 
-
-            <!-- ЛЕВАЯ КОЛОНКА — БЫСТРЫЙ ДОСТУП -->
-
-            <aside class="sites-section">
-
-                <div class="sites-grid">
-
-                    <!-- YouTube -->
-                    <a
-                        class="site-link"
-                        href="https://www.youtube.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="YouTube"
-                        title="YouTube"
-                    >
-                        <img
-                            class="site-icon"
-                            src="icon/youtube.png"
-                            alt=""
-                        >
-                    </a>
-
-
-                    <!-- Pinterest -->
-                    <a
-                        class="site-link"
-                        href="https://ru.pinterest.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Pinterest"
-                        title="Pinterest"
-                    >
-                        <img
-                            class="site-icon"
-                            src="icon/pinterest.png"
-                            alt=""
-                        >
-                    </a>
-
-
-                    <!-- GitHub -->
-                    <a
-                        class="site-link"
-                        href="https://github.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub"
-                        title="GitHub"
-                    >
-                        <img
-                            class="site-icon"
-                            src="icon/github.png"
-                            alt=""
-                        >
-                    </a>
-
-
-                    <!-- ChatGPT -->
-                    <a
-                        class="site-link"
-                        href="https://chatgpt.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="ChatGPT"
-                        title="ChatGPT"
-                    >
-                        <img
-                            class="site-icon"
-                            src="icon/chatgpt.png"
-                            alt=""
-                        >
-                    </a>
-
-
-                    <!-- РКСИ -->
-                    <a
-                        class="site-link"
-                        href="https://www.rksi.ru/schedule"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="РКСИ"
-                        title="РКСИ"
-                    >
-                        <img
-                            class="site-icon"
-                            src="icon/rksi.png"
-                            alt=""
-                        >
-                    </a>
-
-                </div>
-
-            </aside>
-
-
-
-            <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА -->
-
-            <div class="center-content">
-
+            <!-- ЛЕВАЯ ЗОНА: ПОИСК И БЫСТРЫЙ ДОСТУП -->
+            <div class="left-content">
 
                 <!-- ПОИСК -->
-
                 <section class="search-section">
-
                     <form
                         class="search-form"
                         action="https://www.google.com/search"
                         method="get"
                     >
-
-                        <label
-                            for="search-input"
-                            class="visually-hidden"
-                        >
+                        <label for="search-input" class="visually-hidden">
                             Поиск в интернете
                         </label>
 
@@ -180,168 +51,77 @@
                             autocomplete="off"
                         >
 
-                        <button
-                            type="submit"
-                            aria-label="Искать"
-                        >
-                            →
-                        </button>
-
+                        <button type="submit" aria-label="Искать">→</button>
                     </form>
-
                 </section>
 
+                <!-- БЫСТРЫЙ ДОСТУП -->
+                <aside class="sites-section">
+                    <div class="sites-grid">
+                        <a class="site-link" href="https://www.youtube.com/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="YouTube" title="YouTube">
+                            <img class="site-icon" src="icon/youtube.png" alt="">
+                        </a>
 
+                        <a class="site-link" href="https://ru.pinterest.com/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Pinterest" title="Pinterest">
+                            <img class="site-icon" src="icon/pinterest.png" alt="">
+                        </a>
 
-                <!-- ЗАМЕТКИ + РАСПИСАНИЕ -->
+                        <a class="site-link" href="https://github.com/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" title="GitHub">
+                            <img class="site-icon" src="icon/github.png" alt="">
+                        </a>
 
-                <section class="widgets-section">
+                        <a class="site-link" href="https://chatgpt.com/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="ChatGPT" title="ChatGPT">
+                            <img class="site-icon" src="icon/chatgpt.png" alt="">
+                        </a>
 
+                        <a class="site-link" href="https://www.rksi.ru/schedule"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="РКСИ" title="РКСИ">
+                            <img class="site-icon" src="icon/rksi.png" alt="">
+                        </a>
+                    </div>
+                </aside>
 
-                    <!-- ЗАМЕТКИ -->
+                <!-- МУЗЫКА -->
+                <aside class="music-section" id="music">
+                    <img class="music-cover"
+                        src="images/music-cover.jpg"
+                        alt="Обложка музыкального плейлиста">
 
-                    <article
-                        class="widget"
-                        id="notes"
-                    >
-
-                        <div class="widget-heading">
-
-                            <h2>
-                                Заметки
-                            </h2>
-
-                            <span>
-                                ✎
-                            </span>
-
+                    <div class="music-info">
+                        <div>
+                            <h2>Моя музыка</h2>
+                            <p>Плейлист для учёбы, отдыха и ночных мыслей</p>
                         </div>
+                    </div>
 
-
-                        <p class="widget-description">
-                            Место для твоих мыслей и идей
-                        </p>
-
-
-                        <textarea
-                            id="notes-text"
-                            class="notes-text"
-                            placeholder="Запиши сюда мысль или идею..."
-                            aria-label="Текст заметки"
-                        ></textarea>
-
-
-                        <div class="notes-footer">
-
-                            <span
-                                id="notes-status"
-                                aria-live="polite"
-                            ></span>
-
-                            <button
-                                id="notes-clear"
-                                type="button"
-                            >
-                                Очистить
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- РАСПИСАНИЕ -->
-
-                    <article
-                        class="widget"
-                        id="schedule"
-                    >
-
-                        <div class="widget-heading">
-
-                            <h2>
-                                Расписание
-                            </h2>
-
-                            <span>
-                                ▦
-                            </span>
-
-                        </div>
-
-
-                        <p
-                            class="widget-description"
-                            id="schedule-description"
-                        >
-                            Загрузка расписания...
-                        </p>
-
-
-                        <div
-                            id="schedule-list"
-                            class="schedule-list"
-                        >
-                            <!-- JavaScript загрузит пары -->
-                        </div>
-
-
-                        <div class="schedule-footer">
-
-                            <span id="schedule-status"></span>
-
-                        </div>
-
-                    </article>
-
-                </section>
+                    <a class="music-link"
+                    href="https://www.youtube.com/watch?v=9y_xRVfJf1A"
+                    target="_blank" rel="noopener noreferrer">
+                        Открыть музыку ↗
+                    </a>
+                </aside>
 
             </div>
 
-
-
-            <!-- ПРАВАЯ КОЛОНКА — МУЗЫКА -->
-
-            <aside
-                class="music-section"
-                id="music"
-            >
-
-                <div class="music-info">
-
-                    <span class="music-icon">
-                        ♫
-                    </span>
-
-                    <div>
-
-                        <h2>
-                            Моя музыка
-                        </h2>
-
-                        <p>
-                            Плейлист для учёбы, отдыха и ночных мыслей
-                        </p>
-
-                    </div>
-
+            <!-- ЧАСЫ СПРАВА -->
+            <header class="hero">
+                <div class="clock">
+                    <time id="clock-time">00:00</time>
+                    <p id="clock-date">Загрузка даты...</p>
+                    <p class="blue-night-title">BLUE NIGHT</p>
                 </div>
-
-
-                <a
-                    class="music-link"
-                    href="https://www.youtube.com/watch?v=9y_xRVfJf1A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Открыть музыку ↗
-                </a>
-
-            </aside>
+            </header>
 
         </div>
-
     </main>
 
 
